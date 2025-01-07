@@ -2,7 +2,7 @@
 
 {
   "name":"BWM-XMD",
-  "description":"Best whatsapp bot developed by Ibrahim adams",
+  "description":"Best whatsapp bot developed by Virusi Mbaya",
   "keywords":["bot","node","baileys","whatsapp"],
   "logo":"https://files.catbox.moe/h2ydge.jpg",
   "repository":"https://github.com/ekitale/maths-project",
@@ -131,7 +131,7 @@
     
     "desc": "Owner name",
     "required": false,
-    "value": "𝐈𝐛𝐫𝐚𝐡𝐢𝐦 𝐀𝐝𝐚𝐦𝐬"
+    "value": "Virusi 🦠 mbaya "
   },
     "SESSION_ID":{
     "description":"put your session ID , the code you received from from ibrahim adams site",   
@@ -157,12 +157,12 @@
   },
   "ANTIDELETE2" : {
     "description": "if you want to enable anti delete in conversation put yes else put no",
-    "value": "no",
+    "value": "yes",
         "required": false
  },
   "ANTIDELETE1" : {
     "description": "if you want to enable anti delete messages to be sent to your inbox put yes else put no",
-    "value": "no",
+    "value": "yes",
         "required": false
   }
   },
