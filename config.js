@@ -22,6 +22,7 @@ module.exports = { session: process.env.SESSION_ID || '',
     WARN_COUNT : process.env.WARN_COUNT || '3' ,
     ETAT : process.env.PRESENCE || '',
     CHATBOT : process.env.CHATBOT || 'no',
+    CHATBOT1 : process.env.AUDIO_CHATBOT || 'yes',
     DP : process.env.STARTING_BOT_MESSAGE || "yes",
     ANTIDELETE1 : process.env.ANTIDELETE1 || 'yes',
     ANTIDELETE2 : process.env.ANTIDELETE2 || 'yes',
@@ -34,7 +35,7 @@ module.exports = { session: process.env.SESSION_ID || '',
                   AUTO_SAVE_CONTACTS : process.env.AUTO_SAVE_CONTACTS || 'yes',
                   AUTO_REJECT_CALL : process.env.AUTO_REJECT_CALL || 'yes',
                   AUTO_BIO : process.env.AUTO_BIO || 'yes',
-                  AUDIO_REPLY : process.env.AUDIO_REPLY || 'yes',
+                  AUDIO_REPLY : process.env.AUDIO_REPLY || 'no',
     DATABASE_URL,
     DATABASE: DATABASE_URL === databasePath
         ? "postgresql://postgres:bKlIqoOUWFIHOAhKxRWQtGfKfhGKgmRX@viaduct.proxy.rlwy.net:47738/railway" : "postgresql://postgres:bKlIqoOUWFIHOAhKxRWQtGfKfhGKgmRX@viaduct.proxy.rlwy.net:47738/railway",
@@ -47,6 +48,8 @@ fs.watchFile(fichier, () => {
     delete require.cache[fichier];
     require(fichier);
 });
+
+
 
 
 
